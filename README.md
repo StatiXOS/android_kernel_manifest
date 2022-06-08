@@ -2,7 +2,7 @@
 
 ## Repo Init ##
 ```bash
-repo init -u https://github.com/StatiXOS/android_kernel_manifest.git -b android-gs-raviole-5.10-android12L
+repo init -u https://github.com/StatiXOS/android_kernel_manifest.git -b android-gs-raviole-5.10-android12-qpr3
 ```
 ## Sync Source ##
 ```bash
