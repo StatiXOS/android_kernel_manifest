@@ -10,6 +10,7 @@
     fetch="https://github.com/StatiXOS/"
     revision="sc-v2" />
 
+  <project path="aosp" name="android_kernel_common" groups="partner" remote="statix" revision="android12-5.10" />
   <project path="private/gs-google" name="android_kernel_google_raviole" groups="partner" remote="statix">
     <linkfile dest="build.config" src="build.config.slider" />
     <linkfile dest="build_slider.sh" src="build_slider.sh" />
