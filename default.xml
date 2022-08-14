@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/" />
+  <remote name="statix" fetch="https://github.com/StatiXOS" />
+  <remote name="github" fetch="https://github.com/" />
+  <default remote="aosp" sync-j="4" />
+  <project path="build" name="android_kernel_build" revision="sc-v2" remote="statix">
+    <linkfile src="build.sh" dest="build.sh" />
+  </project>
+  <project path="private/msm-essential" name="android_kernel_essential_msm8998" remote="statix" revision="sc-v2">
+    <linkfile src="build.config" dest="build.config"/>
+  </project>
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="0b1bb8dd7e3ad5ee9898535e91a673b46386de09" clone-depth="1"/>
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="65e6e70ed1ba42c3d1e9b608cac7977196f32af4" clone-depth="1"/>
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="mvaisakh/gcc-arm64" remote="github" revision="a7650270d71c78e1d9baab1c34fde1659425ddee" clone-depth="1" />
+  <project path="prebuilts-master/misc" name="platform/prebuilts/misc" revision="master" clone-depth="1"/>
+  <project path="kernel/tests" name="kernel/tests" revision="master"/>
+</manifest>
