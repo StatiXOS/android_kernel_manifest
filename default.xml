@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="aosp" fetch=".." review="https://android-review.googlesource.com/" />
-  <default revision="master" remote="aosp" sync-j="4" />
-
+  <remote  name="aosp" fetch="https://android.googlesource.com/" />
   <remote  name="statix"
     fetch="https://github.com/StatiXOS/"
-    revision="sc-v2" />
+    revision="tm" />
+
+  <default revision="master" remote="aosp" sync-j="4" />
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android-mainline" />
 
@@ -23,23 +23,15 @@
     <linkfile src="abi" dest="build/abi" />
     <linkfile src="static_analysis" dest="build/static_analysis" />
   </project>
-  <project path="common" name="kernel/common" revision="android-mainline" >
-    <linkfile src="." dest=".source_date_epoch_dir" />
-  </project>
-  <project path="kernel/common-patches" name="kernel/common-patches" >
-      <linkfile src="android-mainline" dest="common/patches" />
-  </project>
-  <project path="kernel/tests" name="kernel/tests" />
-  <project path="kernel/configs" name="kernel/configs" revision="master" />
-  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="android-mainline" />
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/" clone-depth="1" revision="android12-release" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/" clone-depth="1" revision="android12-release" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" />
   <project path="prebuilts/boot-artifacts" name="platform/prebuilts/boot-artifacts" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
   <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" clone-depth="1" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
-
+   <project path="prebuilts-master/misc" name="platform/prebuilts/misc" groups="partner" />
   <project path="prebuilts/bazel/linux-x86_64" name="platform/prebuilts/bazel/linux-x86_64" clone-depth="1" />
   <project path="prebuilts/jdk/jdk11" name="platform/prebuilts/jdk/jdk11" clone-depth="1" />
   <project path="prebuilts/ndk-r23" name="toolchain/prebuilts/ndk/r23" clone-depth="1" />
@@ -48,4 +40,9 @@
   <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" />
   <project path="external/stardoc" name="platform/external/stardoc" />
   <project path="external/python/absl-py" name="platform/external/python/absl-py" />
+
+  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" revision="android12-release" />
+
+  <!-- OnePlus 9 Series Kernel -->
+  <project path="kernel/msm-5.4" name="android_kernel_oneplus_sm8350" remote="statix" />
 </manifest>
