@@ -3,6 +3,10 @@
   <remote  name="aosp" fetch=".." review="https://android-review.googlesource.com/" />
   <default revision="master" remote="aosp" sync-j="4" />
 
+  <remote  name="statix"
+    fetch="https://github.com/StatiXOS/"
+    revision="sc-v2" />
+
   <superproject name="kernel/superproject" remote="aosp" revision="common-android-mainline" />
 
   <project path="build/kernel" name="kernel/build" >
