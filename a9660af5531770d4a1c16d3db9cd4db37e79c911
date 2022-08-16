@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "39fa365a_db5a6f15",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-16T11:45:10Z",
+      "side": 1,
+      "message": "use private/msm-oneplus, not kernel/msm-5.4",
+      "revId": "a9660af5531770d4a1c16d3db9cd4db37e79c911",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    }
+  ]
+}
