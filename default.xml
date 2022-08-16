@@ -5,7 +5,7 @@
 
   <remote  name="statix"
     fetch="https://github.com/StatiXOS/"
-    revision="sc-v2" />
+    revision="tm" />
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android-mainline" />
 
@@ -23,15 +23,6 @@
     <linkfile src="abi" dest="build/abi" />
     <linkfile src="static_analysis" dest="build/static_analysis" />
   </project>
-  <project path="common" name="kernel/common" revision="android-mainline" >
-    <linkfile src="." dest=".source_date_epoch_dir" />
-  </project>
-  <project path="kernel/common-patches" name="kernel/common-patches" >
-      <linkfile src="android-mainline" dest="common/patches" />
-  </project>
-  <project path="kernel/tests" name="kernel/tests" />
-  <project path="kernel/configs" name="kernel/configs" revision="master" />
-  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="android-mainline" />
   <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" />
   <project path="prebuilts/boot-artifacts" name="platform/prebuilts/boot-artifacts" />
@@ -48,4 +39,7 @@
   <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" />
   <project path="external/stardoc" name="platform/external/stardoc" />
   <project path="external/python/absl-py" name="platform/external/python/absl-py" />
+
+  <!-- OnePlus 9 Series Kernel -->
+  <project path="kernel/msm-5.4" name="android_kernel_oneplus_sm8350" remote="statix" />
 </manifest>
