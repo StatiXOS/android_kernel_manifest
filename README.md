@@ -2,21 +2,21 @@
 
 ## Repo Init ##
 ```bash
-repo init -u https://github.com/StatiXOS/android_kernel_manifest.git -b android-msm-lemonadep-5.4-android13
+repo init -u https://github.com/StatiXOS/android_kernel_manifest.git -b android-msm-sake-5.4-android11-lts
 ```
 ## Sync Source ##
 ```bash
 repo sync --force-sync --no-clone-bundle --current-branch --no-tags -j$(nproc --all)
 ```
 ## Build ##
-For Clang builds
+For Clang builds (not recommended)
 ```bash
-BUILD_CONFIG=kernel/msm-5.4/build.config.msm.lahaina VARIANT=qgki LTO=full BUILD_KERNEL=1 build/build.sh
+BUILD_CONFIG=private/asus-msm-5.4/build.config.sake COMPILER=clang BUILD_KERNEL=1 build/build.sh
 ```
 
-For GCC builds
+For GCC builds (recommended)
 ```bash
-BUILD_CONFIG=kernel/msm-5.4/build.config.msm.lahaina VARIANT=qgki COMPILER=gcc BUILD_KERNEL=1 build/build.sh
+BUILD_CONFIG=private/asus-msm-5.4/build.config.sake COMPILER=gcc BUILD_KERNEL=1 build/build.sh
 ```
 ### Submitting Patches ###
 
