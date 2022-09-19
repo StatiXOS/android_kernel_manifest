@@ -20,7 +20,7 @@
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
 
-  <!-- OnePlus 9 Series Kernel -->
+  <!-- ASUS Zenfone 8 Kernel -->
   <project path="private/asus-msm-5.4" name="android_kernel_asus_sm8350" remote="statix" />
 
   <!-- Eva GCC -->
