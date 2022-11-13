@@ -4,34 +4,26 @@
   <remote  name="aosp"
     fetch="https://android.googlesource.com/" />
   <default revision="android-gs-raviole-5.10-android12-qpr3"
-    remote="aosp" sync-j="4" />
+    remote="aosp" />
+
+  <remote name="AI2202"
+      fetch="https://github.com/sourajitk/"
+      sync-c="true"
+      sync-tags="false"
+      revision="tm" />
+
+  <remote name="aospa"
+      fetch="https://github.com/"
+      sync-c="true"
+      sync-tags="false" />  
 
   <project path="aosp" name="kernel/common" groups="partner" />
-  <project path="private/gs-google" name="kernel/gs" groups="partner" >
-    <linkfile dest="build.config" src="build.config.slider" />
-    <linkfile dest="build_slider.sh" src="build_slider.sh" />
-    <linkfile dest="build_mixed.sh" src="build_mixed.sh" />
-    <linkfile dest="update_symbol_list.sh" src="update_symbol_list.sh" />
+  <project name="msm-5.10" path="private/msm-asus" remote="AI2202" >
+    <linkfile dest="aosp/build.config.msm.waipio" src="build.config.msm.waipio"/>
   </project>
-  <project path="private/google-modules/amplifiers" name="kernel/google-modules/amplifiers" groups="partner" />
-  <project path="private/google-modules/aoc" name="kernel/google-modules/aoc" groups="partner" />
-  <project path="private/google-modules/aoc_ipc" name="kernel/google-modules/aoc-ipc" groups="partner" />
-  <project path="private/google-modules/bluetooth/broadcom" name="kernel/google-modules/bluetooth/broadcom" groups="partner" />
-  <project path="private/google-modules/bms" name="kernel/google-modules/bms" groups="partner" />
-  <project path="private/google-modules/display" name="kernel/google-modules/display" groups="partner" />
-  <project path="private/google-modules/edgetpu" name="kernel/google-modules/edgetpu" groups="partner" />
-  <project path="private/google-modules/fingerprint/fpc" name="kernel/google-modules/fingerprint/fpc" groups="partner" />
-  <project path="private/google-modules/fingerprint/goodix" name="kernel/google-modules/fingerprint/goodix" groups="partner" />
-  <project path="private/google-modules/gpu" name="kernel/google-modules/gpu" groups="partner" />
-  <project path="private/google-modules/lwis" name="kernel/google-modules/lwis" groups="partner" />
-  <project path="private/google-modules/power/reset" name="kernel/google-modules/power/reset" groups="partner" />
-  <project path="private/google-modules/touch/common" name="kernel/google-modules/touch/common" groups="partner" />
-  <project path="private/google-modules/touch/fts" name="kernel/google-modules/touch/fts_touch" groups="partner" />
-  <project path="private/google-modules/touch/sec" name="kernel/google-modules/touch/sec_touch" groups="partner" />
-  <project path="private/google-modules/uwb" name="kernel/google-modules/uwb" groups="uwb" />
-  <project path="private/google-modules/nfc" name="kernel/google-modules/nfc" groups="partner" />
-  <project path="private/google-modules/wlan/bcmdhd43752" name="kernel/google-modules/wlan/bcmdhd/bcm43752" groups="partner" />
-  <project path="private/google-modules/wlan/bcmdhd4389" name="kernel/google-modules/wlan/bcmdhd/bcm4389" groups="partner" />
+  <project name="AOSPA/vendor_qcom_opensource_camera-kernel" path="private/msm-modules/camera-kernel" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_opensource_display-drivers" path="private/msm-modules/display-drivers" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_opensource_audio-kernel-ar" path="private/msm-modules/audio-kernel" remote="aospa" revision="topaz-asus-davinci" />
   <project path="build" name="kernel/build" groups="partner" />
   <project path="kernel/configs" name="kernel/configs" />
   <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" />
@@ -42,4 +34,6 @@
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="partner" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" groups="partner" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" groups="partner" />
+
+  <include name="msm-modules.xml" />
 </manifest>
