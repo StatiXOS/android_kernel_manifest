@@ -18,12 +18,7 @@
       sync-tags="false" />  
 
   <project path="aosp" name="kernel/common" groups="partner" />
-  <project name="msm-5.10" path="private/msm-asus" remote="AI2202" >
-    <linkfile dest="aosp/build.config.msm.waipio" src="build.config.msm.waipio"/>
-  </project>
-  <project name="AOSPA/vendor_qcom_opensource_camera-kernel" path="private/msm-modules/camera-kernel" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_opensource_display-drivers" path="private/msm-modules/display-drivers" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_opensource_audio-kernel-ar" path="private/msm-modules/audio-kernel" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="msm-5.10" path="private/msm-asus" remote="AI2202" />
   <project path="build" name="kernel/build" groups="partner" />
   <project path="kernel/configs" name="kernel/configs" />
   <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" />

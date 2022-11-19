@@ -19,6 +19,17 @@
           sync-c="true"
           sync-tags="false" />
 
+  <project name="AOSPA/vendor_qcom_proprietary_audio-devicetree" path="private/msm-asus-devicetree/audio" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_camera-devicetree" path="private/msm-asus-devicetree/camera" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_cvp-devicetree" path="private/msm-asus-devicetree/cvp" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_display-devicetree" path="private/msm-asus-devicetree/display" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_mmrm-devicetree" path="private/msm-asus-devicetree/mmrm" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_video-devicetree" path="private/msm-asus-devicetree/video" remote="aospa" revision="topaz-asus-davinci" />
+
+  <project name="AOSPA/vendor_qcom_opensource_camera-kernel" path="private/msm-asus/techpack/camera" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_opensource_display-drivers" path="private/msm-asus/techpack/display" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_opensource_audio-kernel-ar" path="private/msm-asus/techpack/audio" remote="aospa" revision="topaz-asus-davinci" />
+
   <project name="platform/vendor/opensource/cvp-kernel" path="private/msm-modules/cvp-kernel" remote="clo_vendor_waipio" />
   <project name="platform/vendor/opensource/dataipa" path="private/msm-modules/dataipa" remote="clo" revision="refs/tags/LA.VENDOR.1.0.r1-13100-WAIPIO.QSSI13.0" />
   <project name="platform/vendor/opensource/mmrm-driver" path="private/msm-modules/mmrm-driver" remote="clo" revision="refs/tags/VIDEO.LA.2.0.r1-05700-WAIPIO.0" />
