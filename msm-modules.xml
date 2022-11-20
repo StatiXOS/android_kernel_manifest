@@ -19,27 +19,31 @@
           sync-c="true"
           sync-tags="false" />
 
-  <project name="AOSPA/vendor_qcom_proprietary_audio-devicetree" path="private/msm-asus-devicetree/audio" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_proprietary_camera-devicetree" path="private/msm-asus-devicetree/camera" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_proprietary_cvp-devicetree" path="private/msm-asus-devicetree/cvp" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_proprietary_display-devicetree" path="private/msm-asus-devicetree/display" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_proprietary_mmrm-devicetree" path="private/msm-asus-devicetree/mmrm" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_proprietary_video-devicetree" path="private/msm-asus-devicetree/video" remote="aospa" revision="topaz-asus-davinci" />
+  <remote name="statix-git"
+          fetch="https://git.statixos.com/ai2202-statix"
+          revision="tm" />
 
-  <project name="AOSPA/vendor_qcom_opensource_camera-kernel" path="private/msm-asus/techpack/camera" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_opensource_display-drivers" path="private/msm-asus/techpack/display" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_opensource_audio-kernel-ar" path="private/msm-asus/techpack/audio" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="kernel_msm-asus-extra_devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor" remote="statix-git" />
+  <project name="vendor_qcom_proprietary_audio-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/audio" remote="statix-git" />
+  <project name="vendor_qcom_proprietary_camera-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/camera" remote="statix-git" />
+  <project name="AOSPA/vendor_qcom_proprietary_cvp-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/cvp" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_display-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/display" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_mmrm-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/mmrm" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_video-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/video" remote="aospa" revision="topaz-asus-davinci" />
 
-  <project name="platform/vendor/opensource/cvp-kernel" path="private/msm-modules/cvp-kernel" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/opensource/dataipa" path="private/msm-modules/dataipa" remote="clo" revision="refs/tags/LA.VENDOR.1.0.r1-13100-WAIPIO.QSSI13.0" />
+  <project name="kernel_msm-modules_audio-kernel" path="private/msm-modules/audio-kernel" remote="statix-git" />
+  <project name="kernel_msm-modules_camera-kernel" path="private/msm-modules/camera-kernel" remote="statix-git" />
+  <project name="kernel_msm-modules_cvp-kernel" path="private/msm-modules/cvp-kernel" remote="statix-git" />
+  <project name="kernel_msm-modules_dataipa" path="private/msm-modules/dataipa" remote="statix-git" />
+  <project name="kernel_msm-modules_display-kernel" path="private/msm-modules/display-kernel" remote="statix-git" />
   <project name="platform/vendor/opensource/mmrm-driver" path="private/msm-modules/mmrm-driver" remote="clo" revision="refs/tags/VIDEO.LA.2.0.r1-05700-WAIPIO.0" />
   <project name="platform/vendor/opensource/mmrm-driver-test" path="private/msm-modules/mmrm-driver/test" remote="clo" revision="refs/tags/VIDEO.LA.2.0.r1-05700-WAIPIO.0" />
-  <project name="platform/vendor/opensource/eva-kernel" path="private/msm-modules/eva-kernel" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/opensource/video-driver" path="private/msm-modules/video-driver" remote="clo" revision="refs/tags/VIDEO.LA.2.0.r1-05700-WAIPIO.0" />
+  <project name="kernel_msm-modules_eva-kernel" path="private/msm-modules/eva-kernel" remote="statix-git" />
+  <project name="kernel_msm-modules_video-driver" path="private/msm-modules/video-driver" remote="statix-git" />
   <project name="platform/vendor/opensource/touch-drivers" path="private/msm-modules/touch-drivers" remote="clo_vendor_waipio" />
   <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="private/msm-modules/wlan/fw-api" remote="clo_vendor_waipio" />
   <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="private/msm-modules/wlan/qca-wifi-host-cmn" remote="clo_vendor_waipio" />
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="private/msm-modules/wlan/qcacld-3.0" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/qcom/opensource/datarmnet" path="private/msm-modules/datarmnet" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/qcom/opensource/datarmnet-ext" path="private/msm-modules/datarmnet-ext" remote="clo_vendor_waipio" />
+  <project name="kernel_msm-modules_datarmnet" path="private/msm-modules/datarmnet" remote="statix-git" />
+  <project name="kernel_msm-modules_datarmnet-ext" path="private/msm-modules/datarmnet-ext" remote="statix-git" />
 </manifest>

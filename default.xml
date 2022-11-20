@@ -17,7 +17,7 @@
       sync-c="true"
       sync-tags="false" />  
 
-  <project path="aosp" name="kernel/common" groups="partner" />
+  <project path="common" name="kernel/common" groups="partner" />
   <project name="msm-5.10" path="private/msm-asus" remote="AI2202" />
   <project path="build" name="kernel/build" groups="partner" />
   <project path="kernel/configs" name="kernel/configs" />
