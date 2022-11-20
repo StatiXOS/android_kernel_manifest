@@ -18,7 +18,11 @@
       sync-tags="false" />  
 
   <project path="common" name="kernel/common" groups="partner" revision="android12-5.10" />
-  <project name="msm-5.10" path="private/msm-asus" remote="AI2202" />
+  <project name="msm-5.10" path="private/msm-asus" remote="AI2202">
+    <linkfile dest="build.config" src="build.config.msm.ai2202" />
+    <linkfile dest="build_ai2202.sh" src="build_ai2202.sh" />
+    <linkfile dest="build_mixed.sh" src="build_mixed.sh" />
+  </project>
   <project path="build" name="kernel/build" groups="partner" />
   <project path="kernel/configs" name="kernel/configs" />
   <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" clone-depth="1" />
