@@ -15,7 +15,11 @@
   <remote name="aospa"
       fetch="https://github.com/"
       sync-c="true"
-      sync-tags="false" />  
+      sync-tags="false" />
+
+  <remote name="statix-git"
+          fetch="https://git.statixos.com/ai2202-statix"
+          revision="tm" />
 
   <project path="common" name="kernel/common" groups="partner" revision="android12-5.10" />
   <project name="msm-5.10" path="private/msm-asus" remote="AI2202">
@@ -23,7 +27,7 @@
     <linkfile dest="build_ai2202.sh" src="build_ai2202.sh" />
     <linkfile dest="build_mixed.sh" src="build_mixed.sh" />
   </project>
-  <project path="build" name="kernel/build" groups="partner" />
+  <project path="build" name="kernel_build" remote="statix-git" />
   <project path="kernel/configs" name="kernel/configs" />
   <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" clone-depth="1" />
   <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="partner" clone-depth="1" />

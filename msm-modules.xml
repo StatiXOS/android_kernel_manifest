@@ -19,10 +19,6 @@
           sync-c="true"
           sync-tags="false" />
 
-  <remote name="statix-git"
-          fetch="https://git.statixos.com/ai2202-statix"
-          revision="tm" />
-
   <project name="kernel_msm-asus-extra_devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor" remote="statix-git" />
   <project name="vendor_qcom_proprietary_audio-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/audio" remote="statix-git" />
   <project name="vendor_qcom_proprietary_camera-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/camera" remote="statix-git" />
