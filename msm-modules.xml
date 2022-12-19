@@ -19,13 +19,13 @@
           sync-c="true"
           sync-tags="false" />
 
-  <project name="kernel_msm-asus-extra_devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor" remote="statix-git" />
-  <project name="vendor_qcom_proprietary_audio-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/audio" remote="statix-git" />
-  <project name="vendor_qcom_proprietary_camera-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/camera" remote="statix-git" />
-  <project name="AOSPA/vendor_qcom_proprietary_cvp-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/cvp" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_proprietary_display-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/display" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_proprietary_mmrm-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/mmrm" remote="aospa" revision="topaz-asus-davinci" />
-  <project name="AOSPA/vendor_qcom_proprietary_video-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/video" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="kernel_msm-asus-extra_devicetree" path="private/msm-devicetree/proprietary" remote="statix-git" />
+  <project name="vendor_qcom_proprietary_audio-devicetree" path="private/msm-devicetree/audio" remote="statix-git" />
+  <project name="vendor_qcom_proprietary_camera-devicetree" path="private/msm-devicetree/camera" remote="statix-git" />
+  <project name="AOSPA/vendor_qcom_proprietary_cvp-devicetree" path="private/msm-devicetree/cvp" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_display-devicetree" path="private/msm-devicetree/display" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_mmrm-devicetree" path="private/msm-devicetree/mmrm" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_video-devicetree" path="private/msm-devicetree/video" remote="aospa" revision="topaz-asus-davinci" />
 
   <project name="kernel_msm-modules_audio-kernel" path="private/msm-modules/audio-kernel" remote="statix-git" />
   <project name="kernel_msm-modules_camera-kernel" path="private/msm-modules/camera-kernel" remote="statix-git" />
