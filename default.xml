@@ -30,6 +30,7 @@
   <project path="build" name="kernel_build" remote="statix-git" />
   <project path="kernel/configs" name="kernel/configs" />
   <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" clone-depth="1" />
+  <project path="external/dtc" name="kernel_platform/external/dtc" remote="clo" revision="deb932d81061c472e8bb2648a409a456e6e84997" />
   <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="partner" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" groups="partner" clone-depth="1" />
   <project path="prebuilts-master/misc" name="platform/prebuilts/misc" groups="partner" clone-depth="1" />
