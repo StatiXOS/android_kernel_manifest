@@ -12,16 +12,16 @@
       sync-tags="false"
       revision="tm" />
 
-  <remote name="aospa"
+  <remote name="github"
       fetch="https://github.com/"
       sync-c="true"
       sync-tags="false" />
 
   <remote name="statix-git"
-          fetch="https://git.statixos.com/ai2202-statix"
+          fetch="https://gitlab.com/StatiXOS/davinci-kernel"
           revision="tm" />
 
-  <project path="common" name="kernel/common" groups="partner" revision="android12-5.10" />
+  <project path="common" name="StatiXOS/android_kernel_common" groups="partner" remote="github" revision="android12-5.10" />
   <project name="msm-5.10" path="private/msm-asus" remote="AI2202">
     <linkfile dest="build.config" src="build.config.msm.ai2202" />
     <linkfile dest="build_ai2202.sh" src="build_ai2202.sh" />
