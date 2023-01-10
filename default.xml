@@ -20,8 +20,8 @@
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
 
-  <!-- OnePlus 9 Series Kernel -->
-  <project path="kernel/msm-5.4" name="android_kernel_oneplus_sm8350" remote="statix" />
+  <!-- realme GT Master (edition) kernel -->
+  <project path="kernel/msm-5.4" name="pjgowtham/android_kernel_oplus_sm8350" revision="lineage-19.1-RMX3360-S-source" />
 
   <!-- Eva GCC -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="statix" revision="13.0.0" clone-depth="1" />
