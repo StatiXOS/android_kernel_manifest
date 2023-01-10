@@ -18,5 +18,5 @@
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
 
   <!-- realme GT Master (edition) kernel -->
-  <project path="kernel/msm-5.4" name="pjgowtham/android_kernel_oplus_sm8350" revision="lineage-19.1-RMX3360-S-source" />
+  <project path="kernel/msm-5.4" name="pjgowtham/android_kernel_oplus_sm8350" remote="github" revision="lineage-19.1-RMX3360-S-source" />
 </manifest>
