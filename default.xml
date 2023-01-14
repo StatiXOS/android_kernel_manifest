@@ -6,7 +6,10 @@
   <default revision="android-gs-raviole-5.10-android13-qpr1"
     remote="aosp" sync-j="4" />
 
-  <project path="aosp" name="kernel/common" groups="partner" />
+  <remote name="statix"
+          fetch="https://github.com/StatiXOS" />
+
+  <project path="aosp" name="android_kernel_common" groups="partner" remote="statix" revision="android13-5.10"/>
   <project path="private/gs-google" name="kernel/gs" groups="partner">
     <linkfile dest="build.config" src="build.config.slider"/>
     <linkfile dest="build_slider.sh" src="build_slider.sh"/>
