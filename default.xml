@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="aosp" fetch=".." review="https://android-review.googlesource.com/" />
+  <remote name="aosp" 
+          fetch="https://android.googlesource.com/" />
+  <remote  name="statix"
+    fetch="https://github.com/StatiXOS/"
+    revision="tm" />
+  <remote  name="github"
+    fetch="https://github.com/" />
+
   <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
 
   <superproject name="kernel/superproject" remote="aosp"/>
-
   <project path="build" name="kernel/build" />
-  <project path="common" name="kernel/common" revision="android-4.19-stable" />
   <project path="kernel/tests" name="kernel/tests" />
   <project path="kernel/configs" name="kernel/configs" />
-  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="android-4.19-stable" />
   <project path="prebuilts/gas/linux-x86" name="platform/prebuilts/gas/linux-x86" clone-depth="1" />
   <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
+
+  <!-- Sunny Kernel -->
+  <project path="kernel/msm-4.14" name="android_kernel_xiaomi_sunny" remote="statix" revision="tm" />
+
+  <!-- Eva GCC -->
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="statix" revision="12.0.0" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi" name="android_prebuilts_gcc_linux-x86_arm_arm-eabi" remote="statix" revision="12.0.0" clone-depth="1" />
+
 </manifest>
