@@ -20,7 +20,20 @@
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
 
   <!-- Xiaomi SM8250 Kernel -->
-  <project path="kernel/msm-4.19" name="android_kernel_xiaomi_sm8250" remote="statix" />
+  <project path="kernel/msm-4.19" name="android_kernel_xiaomi_sm8250" remote="statix">
+    <linkfile dest="build.config.xiaomi.alioth" src="build.config.xiaomi.alioth" />
+    <linkfile dest="build.config.xiaomi.apollo" src="build.config.xiaomi.apollo" />
+    <linkfile dest="build.config.xiaomi.cas" src="build.config.xiaomi.cas" />
+    <linkfile dest="build.config.xiaomi.cmi" src="build.config.xiaomi.cmi" />
+    <linkfile dest="build.config.xiaomi.dagu" src="build.config.xiaomi.dagu" />
+    <linkfile dest="build.config.xiaomi.elish" src="build.config.xiaomi.elish" />
+    <linkfile dest="build.config.xiaomi.enuma" src="build.config.xiaomi.enuma" />
+    <linkfile dest="build.config.xiaomi.lmi" src="build.config.xiaomi.lmi" />
+    <linkfile dest="build.config.xiaomi.munch" src="build.config.xiaomi.munch" />
+    <linkfile dest="build.config.xiaomi.psyche" src="build.config.xiaomi.psyche" />
+    <linkfile dest="build.config.xiaomi.thyme" src="build.config.xiaomi.thyme" />
+    <linkfile dest="build.config.xiaomi.umi" src="build.config.xiaomi.umi" />
+  </project>
 
   <!-- Eva GCC -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="statix" revision="13.0.0" clone-depth="1" />
