@@ -20,17 +20,22 @@ For Clang builds
 ```bash
 BUILD_CONFIG=build.config.xiaomi.${DEVICE_NAME} BUILD_KERNEL=1 build/build.sh
 ```
+Clang Extras:
+* Pass `LTO=full|thin` to build with full clang LTO or thinLTO respectively.
 
 For GCC builds
 ```bash
 BUILD_CONFIG=build.config.xiaomi.${DEVICE_NAME} COMPILER=gcc BUILD_KERNEL=1 build/build.sh
 ```
 
+GCC Extras:
+* Pass `GCC_LTO=1` to build with full GCC LTO.
+
 Example:
 
-For alioth with GCC
+For alioth with GCC LTO
 ```bash
-BUILD_CONFIG=build.config.xiaomi.alioth COMPILER=gcc BUILD_KERNEL=1 build/build.sh
+BUILD_CONFIG=build.config.xiaomi.alioth COMPILER=gcc GCC_LTO=1 BUILD_KERNEL=1 build/build.sh
 ```
 
 ### Submitting Patches ###
