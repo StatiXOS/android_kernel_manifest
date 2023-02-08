@@ -2,28 +2,29 @@
 <manifest>
   <remote name="aosp" 
           fetch="https://android.googlesource.com/" />
-  <remote  name="statix"
-    fetch="https://github.com/StatiXOS/"
-    revision="tm" />
   <remote  name="github"
     fetch="https://github.com/" />
+  <remote  name="gitlab"
+    fetch="https://gitlab.com/" />
 
+  <!-- AOSP -->
   <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
-
   <superproject name="kernel/superproject" remote="aosp"/>
   <project path="build" name="kernel/build" />
   <project path="kernel/tests" name="kernel/tests" />
   <project path="kernel/configs" name="kernel/configs" />
-  <project path="prebuilts/gas/linux-x86" name="platform/prebuilts/gas/linux-x86" clone-depth="1" />
   <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
 
-  <!-- Sunny Kernel -->
-  <project path="kernel/msm-4.14" name="android_kernel_xiaomi_sunny" remote="statix" revision="tm" />
+  <!-- RMP6768 Kernel -->
+  <project path="kernel/realme/RMP6768" name="StatiXOS/android_kernel_realme_RMP6768" remote="github" revision="tm" />
 
-  <!-- Eva GCC -->
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="statix" revision="12.0.0" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi" name="android_prebuilts_gcc_linux-x86_arm_arm-eabi" remote="statix" revision="12.0.0" clone-depth="1" />
+  <!-- GCC -->
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="github" revision="lineage-19.1" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="github" revision="lineage-19.1" clone-depth="1" />
+
+  <!-- Clang -->
+  <project path="prebuilts-master/clang/host/linux-x86/clang-r475365b" name="yaosp/prebuilts_clang_host_linux-x86_clang-r475365b" remote="gitlab" revision="master" clone-depth="1" />
 
 </manifest>

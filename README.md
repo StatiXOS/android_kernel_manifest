@@ -2,11 +2,15 @@
 
 ## Repo Init ##
 ```bash
-repo init -u https://github.com/StatiXOS/android_kernel_manifest.git -b android-msm-sunny-4.14-android11
+repo init -u https://github.com/StatiXOS/android_kernel_manifest.git -b android-mtk-rmp6768-4.14-android11
 ```
 ## Sync Source ##
 ```bash
 repo sync --force-sync --no-clone-bundle --current-branch --no-tags -j$(nproc --all)
+```
+## Building Kernel ##
+```bash
+BUILD_CONFIG=kernel/realme/RMP6768/build.config.RMP6768 build/build.sh
 ```
 ### Submitting Patches ###
 Please refer to this for submitting patches: https://github.com/StatiXOS/android_manifest#submitting-patches
