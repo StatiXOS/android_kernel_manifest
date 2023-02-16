@@ -2,7 +2,7 @@
 
 ## Repo Init ##
 ```bash
-repo init -u https://github.com/rk134/android_kernel_manifest.git -b android-msm-RMX3360-5.4-android13
+repo init -u https://github.com/rk134/android_kernel_manifest.git -b android-msm-lunaa-5.4-android13
 ```
 ## Sync Source ##
 ```bash
