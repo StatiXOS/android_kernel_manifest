@@ -38,7 +38,7 @@
   <project name="kernel_msm-modules_video-driver" path="private/msm-modules/video-driver" remote="statix-git" />
   <project name="platform/vendor/opensource/touch-drivers" path="private/msm-modules/touch-drivers" remote="clo_vendor_waipio" />
   <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="private/msm-modules/wlan/fw-api" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="private/msm-modules/wlan/qca-wifi-host-cmn" remote="clo_vendor_waipio" />
+  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="private/msm-modules/wlan/qca-wifi-host-cmn" remote="clo_vendor_waipio" revision="c56815fbb1ced2fd048a5bd194472fee5fbcab34" upstream="refs/heads/wlan-cmn.driver.lnx.2.0.r30-rel" />
   <project name="kernel_msm-modules_wlan_qcacld-3.0" path="private/msm-modules/wlan/qcacld-3.0" remote="statix-git" />
   <project name="kernel_msm-modules_datarmnet" path="private/msm-modules/datarmnet" remote="statix-git" />
   <project name="kernel_msm-modules_datarmnet-ext" path="private/msm-modules/datarmnet-ext" remote="statix-git" />
