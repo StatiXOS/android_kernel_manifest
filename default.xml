@@ -19,6 +19,7 @@
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
+  <project path="tools/libufdt" name="platform/system/libufdt" revision="master" remote="aosp" />
 
   <!-- OnePlus 9 Series Kernel -->
   <project path="kernel/msm-5.4" name="android_kernel_oneplus_sm8350" remote="statix" />
