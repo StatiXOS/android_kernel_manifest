@@ -11,12 +11,12 @@ repo sync --force-sync --no-clone-bundle --current-branch --no-tags -j$(nproc --
 ## Build ##
 For Clang builds
 ```bash
-BUILD_CONFIG=kernel/msm-5.4/build.config.msm.lahaina VARIANT=qgki LTO=full DEVICE=venus BUILD_KERNEL=1 build/build.sh
+BUILD_CONFIG=kernel/msm-5.4/build.config.msm.lahaina VARIANT=qgki LTO=full TARGET_PRODUCT=venus BUILD_KERNEL=1 build/build.sh
 ```
 
 For GCC builds
 ```bash
-BUILD_CONFIG=kernel/msm-5.4/build.config.msm.lahaina VARIANT=qgki COMPILER=gcc DEVICE=venus BUILD_KERNEL=1 build/build.sh
+BUILD_CONFIG=kernel/msm-5.4/build.config.msm.lahaina VARIANT=qgki COMPILER=gcc TARGET_PRODUCT=venus BUILD_KERNEL=1 build/build.sh
 ```
 ### Submitting Patches ###
 
