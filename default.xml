@@ -3,7 +3,7 @@
   <remote  name="aosp" fetch="https://android.googlesource.com/" />
   <remote  name="statix"
     fetch="https://github.com/StatiXOS/"
-    revision="tm" />
+    revision="udc" />
   <remote  name="github"
     fetch="https://github.com/" />
 
