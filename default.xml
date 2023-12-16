@@ -3,7 +3,7 @@
   <remote  name="aosp" fetch="https://android.googlesource.com/" />
   <remote  name="statix"
     fetch="https://github.com/StatiXOS/"
-    revision="tm" />
+    revision="udc" />
   <remote  name="github"
     fetch="https://github.com/" />
 
@@ -14,6 +14,8 @@
   <project path="kernel/configs" name="kernel/configs" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
+  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
+  <project path="tools/libufdt" name="platform/system/libufdt" revision="master" remote="aosp" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
 
   <!-- ASUS Zenfone 8 Kernel -->

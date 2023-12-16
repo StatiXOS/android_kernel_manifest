@@ -9,10 +9,10 @@ repo init -u https://github.com/StatiXOS/android_kernel_manifest.git -b android-
 repo sync --force-sync --no-clone-bundle --current-branch --no-tags -j$(nproc --all)
 ```
 ## Build ##
-Set BUILD_DT to 0 if you don't want to build DTBs. Currently only GCC is supported
-and it is set to be the default.
+Set BUILD_DT to 0 if you don't want to build DTBs. Currently GCC is unsupported and
+it is set to use Clang by default.
 ```bash
-BUILD_CONFIG=private/asus-msm-5.4/build.config.sake BUILD_KERNEL=1 BUILD_DT=1 build/build.sh
+BUILD_CONFIG=private/asus-msm-5.4/build.config.sake BUILD_KERNEL=1 build/build.sh
 ```
 ### Submitting Patches ###
 
