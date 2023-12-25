@@ -37,9 +37,9 @@
   <project name="kernel_msm-modules_eva-kernel" path="private/msm-modules/eva-kernel" remote="statix-git" />
   <project name="kernel_msm-modules_video-driver" path="private/msm-modules/video-driver" remote="statix-git" />
   <project name="platform/vendor/opensource/touch-drivers" path="private/msm-modules/touch-drivers" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="private/msm-modules/wlan/fw-api" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="private/msm-modules/wlan/qca-wifi-host-cmn" remote="clo_vendor_waipio" />
-  <project name="kernel_msm-modules_wlan_qcacld-3.0" path="private/msm-modules/wlan/qcacld-3.0" remote="statix-git" />
+  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="private/msm-modules/wlan/fw-api" remote="clo_vendor_waipio" revision="d1bed67b9224c6062bd3616b502059340e7d6022" />
+  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="private/msm-modules/wlan/qca-wifi-host-cmn" remote="clo_vendor_waipio" revision="292c364f971a6ee4a850100e0e51259e964f98f4" />
+  <project name="kernel_msm-modules_wlan_qcacld-3.0" path="private/msm-modules/wlan/qcacld-3.0" remote="statix-git" revision="e4d17eb26d900e26db4b430b944be430fca56e40" />
   <project name="kernel_msm-modules_datarmnet" path="private/msm-modules/datarmnet" remote="statix-git" />
   <project name="kernel_msm-modules_datarmnet-ext" path="private/msm-modules/datarmnet-ext" remote="statix-git" />
 </manifest>
