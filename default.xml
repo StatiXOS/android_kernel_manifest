@@ -21,7 +21,7 @@
           fetch="https://gitlab.com/StatiXOS/davinci-kernel"
           revision="tm" />
 
-  <project path="common" name="StatiXOS/android_kernel_common" groups="partner" remote="github" revision="android12-5.10" />
+  <project name="kernel/common" path="common" remote="clo_kernel_waipio" />
   <project name="msm-5.10" path="private/msm-asus" remote="AI2202">
     <linkfile dest="build.config" src="build.config.msm.ai2202" />
     <linkfile dest="build_ai2202.sh" src="build_ai2202.sh" />
@@ -31,7 +31,7 @@
   <project path="kernel/configs" name="kernel/configs" />
   <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" clone-depth="1" />
   <project path="external/dtc" name="kernel_platform/external/dtc" remote="clo" revision="deb932d81061c472e8bb2648a409a456e6e84997" />
-  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="partner" clone-depth="1" />
+  <project path="prebuilts-master/clang/host/linux-x86" name="kernelplatform/prebuilts-master/clang/host/linux-x86" revision="0fc3d01a780023469b7acc18c56a9cf5099a6d6c" remote="clo_kernel_waipio" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" groups="partner" clone-depth="1" />
   <project path="prebuilts-master/misc" name="platform/prebuilts/misc" groups="partner" clone-depth="1" />
   <project path="prebuilts/boot-artifacts" name="platform/prebuilts/boot-artifacts" groups="partner" clone-depth="1" />

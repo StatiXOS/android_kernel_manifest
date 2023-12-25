@@ -5,14 +5,14 @@
           fetch="https://git.codelinaro.org/clo/la/"
           sync-c="true"
           sync-tags="false"
-          revision="refs/tags/LA.VENDOR.1.0.r1-16600-WAIPIO.QSSI13.0" />
+          revision="refs/tags/LA.VENDOR.1.0.r1-24200-WAIPIO.QSSI14.0" />
 
   <remote name="clo_kernel_waipio"
           fetch="https://git.codelinaro.org/clo/la/"
           sync-c="true"
           sync-tags="false"
           review="codelinaro.org"
-          revision="refs/tags/KERNEL.PLATFORM.1.0.r1-09000-WAIPIO.0" />
+          revision="refs/tags/KERNEL.PLATFORM.1.0.r1-16800-kernel.0" />
 
   <remote name="clo"
           fetch="https://git.codelinaro.org/clo/la/"
