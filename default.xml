@@ -10,7 +10,7 @@
       fetch="https://github.com/sourajitk/"
       sync-c="true"
       sync-tags="false"
-      revision="tm" />
+      revision="udc" />
 
   <remote name="github"
       fetch="https://github.com/"
