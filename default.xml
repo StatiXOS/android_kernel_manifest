@@ -14,14 +14,15 @@
   <project path="kernel/configs" name="kernel/configs" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
-  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
+  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" revision="refs/tags/android-15-dp-1_r0.8" clone-depth="1" />
   <project path="tools/libufdt" name="platform/system/libufdt" revision="master" remote="aosp" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
 
   <!-- ASUS Zenfone 8 Kernel -->
   <project path="private/asus-msm-5.4" name="android_kernel_asus_sm8350" remote="statix" />
 
-  <!-- Eva GCC -->
+  <!-- Eva GCC
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="statix" revision="14.0.0" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi" name="mvaisakh/gcc-arm" remote="github" revision="d82ade018dd655af90322bb8d6927aa2374dbdcb" clone-depth="1" />
+  -->
 </manifest>
